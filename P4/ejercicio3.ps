@@ -1,0 +1,72 @@
+%!
+newpath             % izquierda
+0 setgray
+0.5 setlinewidth
+% x y R angI angF
+120 450 46 0 360 arc
+1 0 0 setrgbcolor
+fill
+stroke
+
+newpath             % derecha
+0 setgray
+0.5 setlinewidth
+% x y R angI angF
+200 450 46 0 360 arc
+1 0 0 setrgbcolor
+fill
+stroke
+
+gsave               % Guardar el estado actual de la transformación
+45 rotate           % Girar 45 grados hacia la derecha
+
+newpath             
+358 133 moveto     
+90 0 rlineto
+0 90 rlineto
+-90 0 rlineto
+closepath
+5 setlinewidth
+
+fill
+stroke
+
+grestore            % Restaurar el estado anterior de la transformación
+
+/Times-Roman findfont    % Sección de texto
+0 0 0 setrgbcolor
+15 scalefont
+setfont
+
+newpath
+320 500 moveto
+0.8 setgray
+(Vorrei poter) show
+stroke
+
+newpath
+320 480 moveto
+0.7 setgray
+(tornare indietro) show
+stroke
+
+newpath
+320 460 moveto
+0.5 setgray
+(trovarti prima e) show
+stroke
+
+newpath
+320 440 moveto
+0.3 setgray
+(amarti piu a) show
+stroke
+
+newpath
+320 420 moveto
+0.1 setgray
+(lungo) show
+stroke
+
+showpage
+
